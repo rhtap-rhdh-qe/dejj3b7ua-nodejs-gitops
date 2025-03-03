@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: dejj3b7ua-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/dejj3b7ua-nodejs

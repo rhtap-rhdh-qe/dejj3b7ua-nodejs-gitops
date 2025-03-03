@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dejj3b7ua-nodejs-gitops
+  description: This is GitOps manifest for dejj3b7ua-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=dejj3b7ua-nodejs
+    backstage.io/kubernetes-id: dejj3b7ua-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: dejj3b7ua-nodejs   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:dejj3b7ua-nodejs
